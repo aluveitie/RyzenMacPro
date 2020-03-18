@@ -73,34 +73,6 @@
 		</array>
 		<key>Block</key>
 		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Drop CpuPm</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1UG0AAAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Drop Cpu0Ist</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1MElzdAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
@@ -201,14 +173,6 @@
 	<dict>
 		<key>MmioWhitelist</key>
 		<array>
-			<dict>
-				<key>Address</key>
-				<integer>4278190080</integer>
-				<key>Comment</key>
-				<string>Generic: PCI root is a 0x1000 page memory region used by some firmwares</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -246,36 +210,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x5,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device-id</key>
-				<data>ORUAAA==</data>
-				<key>device_type</key>
-				<string>Ethernet Controller</string>
-				<key>model</key>
-				<string>I211 Gigabit Network Connection</string>
-				<key>name</key>
-				<string>Intel I211 Ethernet</string>
-				<key>vendor-id</key>
-				<data>hoAAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Multimedia Controller</string>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
-				<key>layout-id</key>
-				<data>AQAAAA==</data>
-				<key>model</key>
-				<string>Starship/Matisse HD Audio Controller</string>
-				<key>name</key>
-				<string>Realtek ALC1220</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -286,12 +220,279 @@
 				<string>onboard-1</string>
 				<key>name</key>
 				<string>Radeon RX 5500 XT</string>
-				<key>built-in</key>
-				<data>AA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Slot-1</string>
+				<key>device_type</key>
+				<string>Multimedia Controller</string>
+				<key>model</key>
+				<string>Radeon RX 5500 XT HDMI Audio</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1/0,4</string>
+				<key>device_type</key>
+				<string>Multimedia Controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Starship/Matisse HD Audio Controller</string>
+				<key>name</key>
+				<string>Realtek ALC1220</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x5,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/5,0/0,0</string>
+				<key>device-id</key>
+				<data>ORUAAA==</data>
+				<key>device_type</key>
+				<string>Ethernet Controller</string>
+				<key>model</key>
+				<string>I211 Gigabit Network Connections</string>
+				<key>name</key>
+				<string>Intel I211 Ethernet</string>
+				<key>vendor-id</key>
+				<data>hoAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x4,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/4,0/0,0</string>
+				<key>device_type</key>
+				<string>Network Controller</string>
+				<key>model</key>
+				<string>Wi-Fi 6 AX200</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/2,0/0,0</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/2,0/0,0/0,0/0,0</string>
+				<key>device_type</key>
+				<string>Generic System Peripheral</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 NHI [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/2,0/0,0/2,0/0,0</string>
+				<key>device_type</key>
+				<string>Serial Bus Controller</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 USB Controller [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/1,0/0,0</string>
+				<key>device_type</key>
+				<string>NVM Express Controller</string>
+				<key>model</key>
+				<string>E16 PCIe4 NVMe Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1/0,1</string>
+				<key>device_type</key>
+				<string>Encryption Controller</string>
+				<key>model</key>
+				<string>Starship/Matisse Cryptographic Coprocessor PSPCPP</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,0,0</string>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Root Complex</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse GPP Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,0</string>
+				<key>device_type</key>
+				<string>SMBus</string>
+				<key>model</key>
+				<string>FCH SMBus Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,3</string>
+				<key>device_type</key>
+				<string>ISA bridge</string>
+				<key>model</key>
+				<string>FCH LPC Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,7,1</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,2</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,3</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1</string>
+				<key>device_type</key>
+				<string>PCI Bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1/0,0</string>
+				<key>device_type</key>
+				<string>Non-Essential Instrumentation</string>
+				<key>model</key>
+				<string>Starship/Matisse Reserved SPP</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x8,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/8,0/0,0</string>
+				<key>device_type</key>
+				<string>Non-Essential Instrumentation</string>
+				<key>model</key>
+				<string>Starship/Matisse Reserved SPP</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,3,1</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse GPP Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Matisse Switch Upstream</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,7,1/0,0</string>
+				<key>device_type</key>
+				<string>Non-Essential Instrumentation</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Function</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x9,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/9,0/0,0</string>
+				<key>device_type</key>
+				<string>SATA Controller</string>
+				<key>model</key>
+				<string>FCH SATA Controller [AHCI mode]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0xA,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/10,0/0,0</string>
+				<key>device_type</key>
+				<string>SATA controller</string>
+				<key>model</key>
+				<string>FCH SATA Controller [AHCI mode]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x2)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,2/0,0</string>
+				<key>device_type</key>
+				<string>SATA controller</string>
+				<key>model</key>
+				<string>FCH SATA Controller [AHCI mode]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x3)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,3/0,0</string>
+				<key>device_type</key>
+				<string>SATA controller</string>
+				<key>model</key>
+				<string>FCH SATA Controller [AHCI mode]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1/0,3</string>
+				<key>device_type</key>
+				<string>USB eXtensible Host Controller</string>
+				<key>model</key>
+				<string>Matisse USB 3.0 Host Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x8,0x0)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/8,0/0,1</string>
+				<key>device_type</key>
+				<string>USB eXtensible Host Controller</string>
+				<key>model</key>
+				<string>Matisse USB 3.0 Host Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x8,0x0)/Pci(0x0,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0/8,0/0,3</string>
+				<key>device_type</key>
+				<string>USB eXtensible Host Controller</string>
+				<key>model</key>
+				<string>Matisse USB 3.0 Host Controller</string>
 			</dict>
 		</dict>
-		<key>Block</key>
-		<dict/>
 	</dict>
 	<key>Kernel</key>
 	<dict>
