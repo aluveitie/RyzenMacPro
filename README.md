@@ -3,6 +3,7 @@
 
 
 This repository provides the basic EFI folder to run macOS Catalina on an ASRock Phantom Gaming ITX/TB3 motherboard. The default provided currently using a Ryzen 9 3900X 12 Core CPU and a Radeon RX 5500 XT. For a short guide to using different CPUs and GPUs see below (all kexts specific to those are named explicitely).
+This is intended as a reference and to share improvements for similar build, not as an out of the box EFI to download. It is highly recommended to start with a vanilla OpenCore and following [OpenCore Vanilla Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) first.
 
 ## Ryzen Mac Pro build
 
@@ -13,6 +14,10 @@ This repository provides the basic EFI folder to run macOS Catalina on an ASRock
 **Video Card:** Sapphire Radeon RX 5500 XT Pulse 8G  
 **Power Supply:** Corsair SF600 Platinum  
 **Case:** Phanteks Enthoo Evolv Shift (Mini-ITX)
+
+## Versions
+**OpenCore:** 0.5.6   
+**MacOS:** 10.15.4  
 
 ## Content
 
