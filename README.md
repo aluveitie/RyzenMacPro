@@ -29,7 +29,6 @@ The following SSDT files are for setting up AGPM injector, HDET and EC.
 - SSDT-HPET.aml
 - SSDT-PLUG.aml
 - SSDT-SBRG.aml
-- SSDT-XOSI.aml (requires the "_OSI to XOSI" patch)
 
 The following SSDT files are for USB Power and properly name USB controllers and ports. Note: to fix sleep issues the internal HS10 port connected to bluetooth is **not** configured as internal. Currently also the internal USB 2 header is not mapped (the SSDT-XHC-full.aml contains all even unconnected ports to do a custom mapping).
 
