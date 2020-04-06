@@ -16,7 +16,7 @@ This is intended as a reference and to share improvements for similar build, not
 **Case:** Phanteks Enthoo Evolv Shift (Mini-ITX)
 
 ## Versions
-**OpenCore:** 0.5.6   
+**OpenCore:** 0.5.7   
 **MacOS:** 10.15.4  
 
 ## Content
