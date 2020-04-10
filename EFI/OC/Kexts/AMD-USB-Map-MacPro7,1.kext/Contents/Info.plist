@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacPro7,1-XHC</key>
+		<key>MacPro7,1-XHC-1022_149c</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -30,12 +30,22 @@
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
 			<string>XHC</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x149c1022</string>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>4700</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>4700</integer>
 				<key>port-count</key>
 				<data>CAAAAA==</data>
 				<key>ports</key>
@@ -44,6 +54,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS03</string>
 						<key>port</key>
 						<data>BgAAAA==</data>
 					</dict>
@@ -51,6 +63,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS05</string>
 						<key>port</key>
 						<data>AwAAAA==</data>
 					</dict>
@@ -58,6 +72,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS06</string>
 						<key>port</key>
 						<data>AQAAAA==</data>
 					</dict>
@@ -65,6 +81,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS10</string>
 						<key>port</key>
 						<data>AgAAAA==</data>
 					</dict>
@@ -72,6 +90,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS05</string>
 						<key>port</key>
 						<data>CAAAAA==</data>
 					</dict>
@@ -79,6 +99,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS06</string>
 						<key>port</key>
 						<data>BwAAAA==</data>
 					</dict>
@@ -86,6 +108,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
+						<key>name</key>
+						<string>SS10</string>
 						<key>port</key>
 						<data>BAAAAA==</data>
 					</dict>
@@ -94,7 +118,7 @@
 			<key>model</key>
 			<string>MacPro7,1</string>
 		</dict>
-		<key>MacPro7,1-XHC2</key>
+		<key>MacPro7,1-XHC2-1022_149c</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -102,12 +126,22 @@
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
 			<string>XHC2</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x149c1022</string>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>4700</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>4700</integer>
 				<key>port-count</key>
 				<data>CAAAAA==</data>
 				<key>ports</key>
@@ -116,6 +150,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS03</string>
 						<key>port</key>
 						<data>BwAAAA==</data>
 					</dict>
@@ -123,6 +159,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS04</string>
 						<key>port</key>
 						<data>CAAAAA==</data>
 					</dict>
@@ -131,7 +169,7 @@
 			<key>model</key>
 			<string>MacPro7,1</string>
 		</dict>
-		<key>MacPro7,1-XHCI</key>
+		<key>MacPro7,1-XHCI-1022_149c</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -139,12 +177,22 @@
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
 			<string>XHCI</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x149c1022</string>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>4700</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>4700</integer>
 				<key>port-count</key>
 				<data>CgAAAA==</data>
 				<key>ports</key>
@@ -153,6 +201,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS01</string>
 						<key>port</key>
 						<data>BgAAAA==</data>
 					</dict>
@@ -160,6 +210,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS02</string>
 						<key>port</key>
 						<data>BQAAAA==</data>
 					</dict>
@@ -167,6 +219,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS04</string>
 						<key>port</key>
 						<data>AQAAAA==</data>
 					</dict>
@@ -174,6 +228,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS01</string>
 						<key>port</key>
 						<data>CQAAAA==</data>
 					</dict>
@@ -181,6 +237,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS02</string>
 						<key>port</key>
 						<data>CgAAAA==</data>
 					</dict>
