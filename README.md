@@ -97,6 +97,17 @@ If it does not entering sleep properly there are some things to be tried:
 - Turn off monitor before entering sleep
 
 
+### Bluetooth
+
+The bluetooth firmware may fail to load and disable Bluetooth completely. This case can usually be fixed with a reboot.
+With deep sleep in S5 enabled in the BIOS this seems to happen regurarely, disabling may help reducing this issue. Reseting the NVRAM also leads to this issue but manually setting the the value in the NVRAM section of the `config.plist` will solve this:
+
+```
+<key>bluetoothActiveControllerInfo</key>
+<data></data>
+```
+You can extract the proper data value with the Hackintool.
+
 ## Credits
 
 Many thanks to all the help from AMD-OS X and the german Hackintosh Forums.
