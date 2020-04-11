@@ -224,6 +224,15 @@
 						<key>port</key>
 						<data>AQAAAA==</data>
 					</dict>
+					<key>HS09</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>HS09</string>
+						<key>port</key>
+						<data>BAAAAA==</data>
+					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
