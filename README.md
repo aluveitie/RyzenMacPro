@@ -68,6 +68,38 @@ Everything is tested with ASRocks latest BIOS v2.0:
   - Security Level: No Security
 - Fast boot: disabled
 
+## USB port mapping
+![Back I/O](./back_io.png)
+The front USB ports on the internal USB 3 header are SS5/HS5 and SS6/HS6.
+The port of the internal USB header is mapped to HS9, the internal Bluetooth module to HS10.
+In case the XHC0 controller is disabled, the ports 3/4 on the back I/O are USB 2 only.
+
+
+| XHC0 -> XHCI | | |
+| --- | --- | --- |
+| PRT1 | HS4 | USB 2 |
+| PRT4 | HS9 | internal USB 2 |
+| PRT5 | HS2 | USB 2 |
+| PRT6 | HS1 | USB 2 |
+| PRT9 | SS1 | USB 2 |
+| PRT10 | SS2 | USB 2 |
+
+| XHC1 -> XHC | | |
+| --- | --- | --- |
+| PRT1 | HS6 | USB 2 |
+| PRT2 | HS10 | Bluetooth |
+| PRT3 | HS5 | USB 2 |
+| PRT4 | SS10 | USB Type C |
+| PRT7 | SS6 | USB 3 |
+| PRT8 | SS5 | USB 3 |
+
+| XHC0 -> XHC2 | | |
+| --- | --- | --- |
+| PRT7 | SS3 | USB 3 |
+| PRT8 | SS4 | USB 3 |
+
+_(The last is the problematic controller causing wake up issues)_
+
 
 
 ## Known issues
