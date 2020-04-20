@@ -590,7 +590,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>AGPMInjector-RX5500-MacPro7,1.kext</string>
+				<string>RadeonBoost.kext</string>
 				<key>Comment</key>
 				<string>Video PM</string>
 				<key>Enabled</key>
@@ -1798,8 +1798,8 @@
 				<data>Rg==</data>
 				<key>boot-args</key>
 				<string>keepsyms=1 npci=0x2000 alcid=1 agdpmod=pikera -hbfx-disable-patch-pci</string>
-                <key>csr-active-config</key>
-                <data>AAAAAA==</data>
+				<key>csr-active-config</key>
+				<data>AAAAAA==</data>
 			</dict>
 		</dict>
 		<key>Block</key>
