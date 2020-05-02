@@ -47,11 +47,12 @@ For enabling the integrated Intel Bluetooth
 
 The SMCAMDProcessor.kext is used to provide CPU temperature and frequency information, the AMD Power Gadget can be downloaded from https://github.com/trulyspinach/SMCAMDProcessor/releases. Other monitoring tools can also access and display this information.
 
-The VoodooTSCSyncAMD kext is used to sync the cores and required the correct number of threads (cores * 2). Either update the Info.plist of the kext or download the generator from [insanelymac](https://www.insanelymac.com/forum/files/file/744-voodootscsync-configurator/).
+The VoodooTSCSyncAMD kext is used to sync the cores and required the correct number of threads (cores * 2). Either update the Info.plist of the kext or create a new one with the VoodooTSCSync configurator.
 
-The RadeonBoost kext is used to inject proper power management (AGPMInjector) and fixes some performance issues. It support SMBIOS iMacPro1,1/all MacPro and RX 480, 580, 590, 5500 (XT), 5600 (XT), 5700 (XT) and Radeon VII. See  [RadeonBoost](https://www.hackintosh-forum.de/forum/thread/47791-radeonboost-kext-benchmark-scores-wie-am-echten-mac-unter-windows/?pageNo=1) for more detailed informations and latest versions.
 
-The AMD-USB-Map kext is depending on the SMBIOS and can be created with the  [Hackintool](https://www.hackintosh-forum.de/forum/thread/38316-hackintool-ehemals-intel-fb-patcher/).
+The RadeonBoost kext is used to inject proper power management (AGPMInjector) and fixes some performance issues. It support SMBIOS iMacPro1,1/all MacPro and RX 480, 580, 590, 5500 (XT), 5600 (XT), 5700 (XT) and Radeon VII.
+
+The AMD-USB-Map kext is depending on the SMBIOS and can be created with the Hackintool.
 See section about sleep for the other variant.
 
 
@@ -140,6 +141,18 @@ With deep sleep in S5 enabled in the BIOS this seems to happen regurarely, disab
 ```
 You can extract the proper data value with the Hackintool.
 
-## Credits
+## Notes
 
-Many thanks to all the help from AMD-OS X and the german Hackintosh Forums.
+Use at your own risk.
+
+Discussions:
+* [AMD OS X](https://forum.amd-osx.com/index.php?threads/ryzen-9-3900x-asrock-x570-itx-tb3-sapphire-rx-5500-pulse-catalina.19/)
+* [Hackintosh Forum](https://www.hackintosh-forum.de/forum/thread/46160-ryzen-9-3900x-asrock-x570-itx-radeon-rx-5500-xt/)
+
+Cedits and links:
+* [OpenCore Desktop Guide](https://github.com/dortania/OpenCore-Desktop-Guide)
+* [AMD OC Ryzen](https://github.com/iGPU/AMD_OC_Ryzen)
+* [CMMChris' RadeonBoost](https://www.hackintosh-forum.de/forum/thread/47791-radeonboost-kext-benchmark-scores-wie-am-echten-mac-unter-windows/?pageNo=1)
+* [trulyspinach's SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
+* [Hackintool](https://www.hackintosh-forum.de/forum/thread/38316-hackintool-ehemals-intel-fb-patcher/)
+* [VoodooTSCSync Configurator](https://www.insanelymac.com/forum/files/file/744-voodootscsync-configurator/)
