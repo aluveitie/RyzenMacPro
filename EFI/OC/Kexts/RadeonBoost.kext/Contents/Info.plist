@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>German</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.3 Copyright © 2020 chinamobilemag.de. All rights reserved.</string>
+	<string>1.4 Copyright © 2020 chinamobilemag.de. All rights reserved.</string>
 	<key>CFBundleIdentifier</key>
 	<string>de.chinamobilemag.RadeonBoost</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -32,6 +32,8 @@
 			<string>AGPMEnabler</string>
 			<key>IOProviderClass</key>
 			<string>IOPlatformPluginDevice</string>
+			<key>model</key>
+			<string>iMacPro1,1 MacPro7,1 MacPro5,1 MacPro4,1</string>
 			<key>Machines</key>
 			<dict>
 				<key>MacPro4,1</key>
@@ -46,7 +48,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -62,7 +64,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -78,7 +80,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -94,7 +96,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -110,7 +112,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -126,7 +128,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -215,7 +217,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -231,7 +233,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -247,7 +249,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -263,7 +265,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -279,7 +281,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
@@ -295,7 +297,7 @@
 							<integer>-1</integer>
 						</dict>
 						<key>control-id</key>
-						<integer>17</integer>
+						<integer>18</integer>
 						<key>max-power-state</key>
 						<integer>15</integer>
 						<key>min-power-state</key>
