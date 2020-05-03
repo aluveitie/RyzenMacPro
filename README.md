@@ -3,19 +3,28 @@
 
 
 This repository provides the basic EFI folder to run macOS Catalina on an ASRock Phantom Gaming ITX/TB3 motherboard. The default provided currently using a Ryzen 9 3900X 12 Core CPU and a Radeon RX 5500 XT. For a short guide to using different CPUs and GPUs see below (all kexts specific to those are named explicitely).
-This is intended as a reference and to share improvements for similar build, not as an out of the box EFI to download. It is highly recommended to start with a vanilla OpenCore and following [OpenCore Vanilla Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) first.
+This is intended as a reference and to share improvements for similar build, not as an out of the box EFI to download. It is highly recommended to start with a vanilla OpenCore and following OpenCore Vanilla Guide first.
 
 ## Ryzen Mac Pro build
 
-**Prozessor:** AMD Ryzen 9 3900X  
-**Mainboard:** AsRock X570 Phantom Gaming ITX/TB3 (BIOS 2.0)  
+**Prozessor:** AMD Ryzen 9 3900X
+**Cooler:** Corsair H80i v2 AIO
+**Motherboard:** AsRock X570 Phantom Gaming ITX/TB3 (BIOS 2.0)  
 **Memory:** Corsair Vengeance RGB Pro (2x, 16GB) DDR4-3200  
 **Storage:** Corsair MP600 (1000GB) M.2 NVMe PCIe 4.0  
 **Video Card:** Sapphire Radeon RX 5500 XT Pulse 8G  
 **Power Supply:** Corsair SF600 Platinum  
 **Case:** Phanteks Enthoo Evolv Shift (Mini-ITX)
+**Case fans:** 2x Noctua NF-A14 PWM
+**AIO fans:** 2x Noctua NF-F12 PPC 2000 PWM
+
+### Notes
+I've replaced the stock Corsai SP120 fans with Noctua's NF-F12 which are quite a bit cooler or quieter depending on how you set up your fan curves. 
+Due to limited space it is not possible to connect the USB cable directly to the pump on this motherboard, instead I've ordered a flat Mini-USB head from [AliExpress](https://www.aliexpress.com/item/4000302723088.html?spm=a2g0s.9042311.0.0.6ef84c4doswqdH).
+Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
+**BIOS:** 2.0
 **OpenCore:** 0.5.7   
 **MacOS:** 10.15.4  
 
@@ -129,6 +138,8 @@ If it does not entering sleep properly there are some things to be tried:
 - Disconnect specific bluetooth devices (like monitor speakers and the like)
 - Turn off monitor before entering sleep
 
+Note that the AIO prevents sleep from working if the pump is connected by USB, even if the port is not configured. I'm currently working around this by connecting the pump one of the external USB ports to manually disconnect it before going to sleep until I can find an internal USB hub which supports PPPS (per port power switch) to disable the connection through software.
+
 
 ### Bluetooth
 
@@ -156,3 +167,4 @@ Cedits and links:
 * [trulyspinach's SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
 * [Hackintool](https://www.hackintosh-forum.de/forum/thread/38316-hackintool-ehemals-intel-fb-patcher/)
 * [VoodooTSCSync Configurator](https://www.insanelymac.com/forum/files/file/744-voodootscsync-configurator/)
+* [Liquidctl](https://github.com/jonasmalacofilho/liquidctl)
