@@ -166,6 +166,7 @@ Cedits and links:
 * [AMD OC Ryzen](https://github.com/iGPU/AMD_OC_Ryzen)
 * [CMMChris' RadeonBoost](https://www.hackintosh-forum.de/forum/thread/47791-radeonboost-kext-benchmark-scores-wie-am-echten-mac-unter-windows/?pageNo=1)
 * [trulyspinach's SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
+* [khronokernel's SmallTree](https://github.com/khronokernel/SmallTree-I211-AT-patch)
 * [Hackintool](https://www.hackintosh-forum.de/forum/thread/38316-hackintool-ehemals-intel-fb-patcher/)
 * [VoodooTSCSync Configurator](https://www.insanelymac.com/forum/files/file/744-voodootscsync-configurator/)
 * [Liquidctl](https://github.com/jonasmalacofilho/liquidctl)

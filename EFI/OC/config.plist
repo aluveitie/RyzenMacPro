@@ -638,7 +638,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SmallTree-Intel-211VA-PCIe-GBE.kext</string>
+				<string>SmallTreeIntel82576.kext</string>
 				<key>Comment</key>
 				<string>Ethernet</string>
 				<key>Enabled</key>
