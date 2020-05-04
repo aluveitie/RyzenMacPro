@@ -7,16 +7,16 @@ This is intended as a reference and to share improvements for similar build, not
 
 ## Ryzen Mac Pro build
 
-**Prozessor:** AMD Ryzen 9 3900X
-**Cooler:** Corsair H80i v2 AIO
+**Prozessor:** AMD Ryzen 9 3900X  
+**Cooler:** Corsair H80i v2 AIO  
 **Motherboard:** AsRock X570 Phantom Gaming ITX/TB3 (BIOS 2.0)  
 **Memory:** Corsair Vengeance RGB Pro (2x, 16GB) DDR4-3200  
 **Storage:** Corsair MP600 (1000GB) M.2 NVMe PCIe 4.0  
 **Video Card:** Sapphire Radeon RX 5500 XT Pulse 8G  
 **Power Supply:** Corsair SF600 Platinum  
-**Case:** Phanteks Enthoo Evolv Shift (Mini-ITX)
-**Case fans:** 2x Noctua NF-A14 PWM
-**AIO fans:** 2x Noctua NF-F12 PPC 2000 PWM
+**Case:** Phanteks Enthoo Evolv Shift (Mini-ITX)  
+**Case fans:** 2x Noctua NF-A14 PWM  
+**AIO fans:** 2x Noctua NF-F12 PPC 2000 PWM  
 
 ### Notes
 I've replaced the stock Corsai SP120 fans with Noctua's NF-F12 which are quite a bit cooler or quieter depending on how you set up your fan curves. 
@@ -110,6 +110,7 @@ In case the XHC0 controller is disabled, the ports 3/4 on the back I/O are USB 2
 
 _(The last is the problematic controller causing wake up issues)_
 
+Best way is to disable that controller in BIOS: AMD PBS -> FCH Common Options -> XCHI Controller 0 to disabled
 
 
 ## Known issues
