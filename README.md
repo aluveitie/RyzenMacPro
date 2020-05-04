@@ -24,8 +24,8 @@ Due to limited space it is not possible to connect the USB cable directly to the
 Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
-**BIOS:** 2.0
-**OpenCore:** 0.5.7   
+**BIOS:** 2.0  
+**OpenCore:** 0.5.8   
 **MacOS:** 10.15.4  
 
 ## Content
