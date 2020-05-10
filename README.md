@@ -55,6 +55,7 @@ For enabling the integrated Intel Bluetooth
 - IntelBluetoothInjector.kext
 
 The SMCAMDProcessor.kext is used to provide CPU temperature and frequency information, the AMD Power Gadget can be downloaded from https://github.com/trulyspinach/SMCAMDProcessor/releases. Other monitoring tools can also access and display this information.
+AMDRyzenCPUPowerManagement-ES.kext is a custom compiled version with a few minor differences: Upon boot low power state (P2) is enabled and Core Performance Boost is desabled by default. Additionally the adjustment has been tuned down a little to not immediately go to the highest power state and go down again faster. This with the intent to not have the CPU going full power for just minor loads like opening an empty browser tab. Only use this kext if you know what you are doing as it requires P2 to work correctly on your CPU. 
 
 The VoodooTSCSyncAMD kext is used to sync the cores and required the correct number of threads (cores * 2). Either update the Info.plist of the kext or create a new one with the VoodooTSCSync configurator.
 
