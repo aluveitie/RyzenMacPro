@@ -628,7 +628,7 @@
 				<key>Comment</key>
 				<string>Video PM</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>

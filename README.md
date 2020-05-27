@@ -26,7 +26,7 @@ Liquidctl allows to controll the AIO under MacOS.
 ## Versions
 **BIOS:** 2.0  
 **OpenCore:** 0.5.8   
-**MacOS:** 10.15.4  
+**macOS:** 10.15.5  
 
 ## Content
 
@@ -61,6 +61,7 @@ The VoodooTSCSyncAMD kext is used to sync the cores and required the correct num
 
 
 The RadeonBoost kext is used to inject proper power management (AGPMInjector) and fixes some performance issues. It support SMBIOS iMacPro1,1/all MacPro and RX 480, 580, 590, 5500 (XT), 5600 (XT), 5700 (XT) and Radeon VII.
+Note: As of 10.15.5 macOS is bugged and panics on boot when RadeonBoost is enabled for Navi cards.
 
 The AMD-USB-Map kext is depending on the SMBIOS and can be created with the Hackintool.
 See section about sleep for the other variant.
