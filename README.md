@@ -117,7 +117,7 @@ Best way is to disable that controller in BIOS: AMD PBS -> FCH Common Options ->
 
 ## Known issues
 
-Thunderbolt controller is not detected by MacOS unless device is already connected during boot. Hot plug does not work and changing devices requires a reboot.
+Thunderbolt controller is not detected by MacOS unless device is already connected during boot. Hot plug is now supported with SSDT-TB3.aml file. (Thanks to [XinJiangCN](https://github.com/XinJiangCN) for that)
 
 The integrated Intel Wifi is not yet supported.
 
