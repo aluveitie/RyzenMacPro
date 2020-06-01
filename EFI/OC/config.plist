@@ -48,14 +48,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB map without XHC0 to fix sleep</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-XHC-XHC0.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>USB power</string>
 				<key>Enabled</key>
 				<true/>
@@ -74,7 +66,7 @@
 				<key>Comment</key>
 				<string>Sleep Management</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
@@ -150,7 +142,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>R1BSVwI=</data>
 				<key>Limit</key>
@@ -655,22 +647,6 @@
 				<string>USB mapping </string>
 				<key>Enabled</key>
 				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>AMD-USB-Map-XHC0-MacPro7,1.kext</string>
-				<key>Comment</key>
-				<string>USB mapping without XHC0 to fix sleep</string>
-				<key>Enabled</key>
-				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>

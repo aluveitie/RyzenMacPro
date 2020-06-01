@@ -39,11 +39,10 @@ The following SSDT files are for setting up HPET and EC.
 - SSDT-PLUG.aml
 - SSDT-SBRG.aml
 
-The following SSDT files are for USB Power and properly name USB controllers and ports. Note: to fix sleep issues the internal HS10 port connected to bluetooth is **not** configured as internal. Currently also the internal USB 2 header is not mapped (the SSDT-XHC-full.aml contains all even unconnected ports to do a custom mapping).
+The following SSDT files are for USB Power and properly name USB controllers and ports. Note: to fix sleep issues the internal HS10 port connected to bluetooth is **not** configured as internal.
 
 - SSDT-USBX.aml
 - SSDT-XHC.aml
-- SSDT-XHC-XHC0.aml (either this or above - see section about sleep)
 
 ### Kexts
 
@@ -125,15 +124,8 @@ Microphone is not yet working through integrated audio codec.
 
 ### Sleep
 
-Sleep can be a difficult topic with little things breaking either entering or leaving sleep. A major source issues for waking up (causing a reboot) is the XHC0 USB Controller, with it disabled and the hibernate fixup kext waking up from sleep seems to work so far.
-
-Lucky us only two USB 3 ports are connected to this controller (the outer ones on the I/O plane) and will be reduced to USB 2 speed. 
-To do this replace
-
-- SSDT-XHC.aml -> SSDT-XHC-XHC0.aml
-- AMD-USB-Map-MacPro7,1.kext -> AMD-USB-Map-XHC0-MacPro7,1.kext
-
-And make sure boot flag -hbfx-disable-patch-pci is set.
+Sleep can be a difficult topic with little things breaking either entering or leaving sleep. Certain USB devices can break transition into sleep (resulting in a kernel panic after 3 minutes).
+And make sure boot flag `-hbfx-disable-patch-pci` is set to avoid black screens on wakeup.
 
 If it does not entering sleep properly there are some things to be tried:
 
