@@ -25,7 +25,7 @@ Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
 **BIOS:** 2.0  
-**OpenCore:** 0.5.8   
+**OpenCore:** 0.5.9   
 **macOS:** 10.15.5  
 
 ## Content

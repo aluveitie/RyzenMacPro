@@ -79,9 +79,8 @@
 				<string>SSDT-TB3.aml</string>
 			</dict>
 		</array>
-		<key>Block</key>
-		<array>
-		</array>
+		<key>Delete</key>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -180,8 +179,7 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -505,7 +503,7 @@
 				<string>Matisse USB 3.0 Host Controller</string>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict/>
 	</dict>
 	<key>Kernel</key>
@@ -629,6 +627,22 @@
 				<string>RadeonBoost.kext</string>
 				<key>Comment</key>
 				<string>Video PM</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>AGPMInjector-MacPro7,1-RX5500XT.kext</string>
+				<key>Comment</key>
+				<string>Video</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
