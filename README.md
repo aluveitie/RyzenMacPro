@@ -24,7 +24,7 @@ Due to limited space it is not possible to connect the USB cable directly to the
 Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
-**BIOS:** 2.0  
+**BIOS:** 2.30  
 **OpenCore:** 0.6.0 (snapshot from 12.07.)  
 **macOS:** 11.0 Beta  
 
@@ -71,13 +71,15 @@ See section about sleep for the other variant.
 
 ### BIOS settings
 
-Everything is tested with ASRocks latest BIOS v2.0:
+Everything is tested with ASRocks latest BIOS v2.00 and v2.30:
 
 - CSM: disabled
 - Above 4G decoding: disabled (must be enabled for certain older graphics card)
 - Thunderbolt: enabled
   - Security Level: No Security
 - Fast boot: disabled
+
+Note: ASRock did a wide cleanup of BIOS options in v2.30, several options were removed like advanced PCIe settings and possibility to disable USB controllers... 
 
 ## USB port mapping
 ![Back I/O](./back_io.png)
