@@ -136,17 +136,6 @@ If it does not entering sleep properly there are some things to be tried:
 Note that the AIO prevents sleep from working if the pump is connected by USB, even if the port is not configured. I'm currently working around this by connecting the pump one of the external USB ports to manually disconnect it before going to sleep until I can find an internal USB hub which supports PPPS (per port power switch) to disable the connection through software.
 
 
-### Bluetooth
-
-The bluetooth firmware may fail to load and disable Bluetooth completely. This case can usually be fixed with a reboot.
-With deep sleep in S5 enabled in the BIOS this seems to happen regurarely, disabling may help reducing this issue. Reseting the NVRAM also leads to this issue but manually setting the the value in the NVRAM section of the `config.plist` will solve this:
-
-```
-<key>bluetoothActiveControllerInfo</key>
-<data></data>
-```
-You can extract the proper data value with the Hackintool.
-
 ## Notes
 
 Use at your own risk.
