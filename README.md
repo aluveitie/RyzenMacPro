@@ -25,7 +25,7 @@ Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
 **BIOS:** 2.30  
-**OpenCore:** 0.6.0 (snapshot from 12.07.)  
+**OpenCore:** 0.6.0 (snapshot from 24.07.)  
 **macOS:** 11.0 Beta  
 
 ## Content
@@ -118,7 +118,7 @@ Best way is to disable that controller in BIOS: AMD PBS -> FCH Common Options ->
 
 ## Known issues
 
-Thunderbolt controller is not detected by MacOS unless device is already connected during boot. Hot plug is now supported with SSDT-TB3.aml file. (Thanks to [XinJiangCN](https://github.com/XinJiangCN) for that)
+Thunderbolt controller is not detected by MacOS unless device is already connected during boot. SSDT-TB3.aml file might improve TB support (Thanks to [XinJiangCN](https://github.com/XinJiangCN) for that).
 
 The integrated Intel Wifi is not yet supported.
 

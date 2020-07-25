@@ -217,9 +217,9 @@
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
-			<false/>
-			<key>SetupVirtualMap</key>
 			<true/>
+			<key>SetupVirtualMap</key>
+			<false/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
@@ -1754,7 +1754,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<false/>
+			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>DummyPowerManagement</key>
@@ -1864,11 +1864,13 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 npci=0x2000 alcid=1 agdpmod=pikera -hbfx-disable-patch-pci</string>
-				<key>booter-fileset-kernel</key>
-				<data>AA==</data>
+				<string>keepsyms=1 npci=0x2000 alcid=1 agdpmod=pikera -hbfx-disable-patch-pci vsmcgen=1 -lilubetaall -wegbeta</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
+				<key>booter-fileset-basesystem</key>
+				<data>AA==</data>
+				<key>booter-fileset-kernel</key>
+				<data>AA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1885,6 +1887,8 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
+				<string>csr-active-config</string>
+				<string>booter-fileset-basesystem</string>
 				<string>booter-fileset-kernel</string>
 			</array>
 		</dict>
