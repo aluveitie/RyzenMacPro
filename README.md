@@ -26,9 +26,11 @@ Liquidctl allows to controll the AIO under MacOS.
 ## Versions
 **BIOS:** 2.30  
 **OpenCore:** 0.6.0 (snapshot from 24.07.)  
-**macOS:** 11.0 Beta  
+**macOS:** 10.15 / 11.0 Beta  
 
 ## Content
+
+`BigSurInstall-config.plist` has a minimal set of kexts and settings which should get the MacOS 11 installer running.
 
 ### ACPI
 
