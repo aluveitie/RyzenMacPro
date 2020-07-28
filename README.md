@@ -30,6 +30,18 @@ Liquidctl allows to controll the AIO under MacOS.
 
 ## Content
 
+### Config
+
+For BIOS 2.30
+ - RebuildAppleMemoryMap: Yes
+ - SetupVirtualMap: No
+ - SyncRuntimePermissions: Yes 
+
+For BIOS 2.00:
+- RebuildAppleMemoryMap: No
+- SetupVirtualMap: Yes
+- SyncRuntimePermissions: No 
+
 `BigSurInstall-config.plist` has a minimal set of kexts and settings which should get the MacOS 11 installer running.
 
 ### ACPI
@@ -138,6 +150,8 @@ If it does not entering sleep properly there are some things to be tried:
 - Turn off monitor before entering sleep
 
 Note that the AIO prevents sleep from working if the pump is connected by USB, even if the port is not configured. I'm currently working around this by connecting the pump one of the external USB ports to manually disconnect it before going to sleep until I can find an internal USB hub which supports PPPS (per port power switch) to disable the connection through software.
+
+BIOS version 2.30 seems to break sleep, screen turns off but system keeps running where as with 2.00 it properly enters sleep.
 
 
 ## Notes
