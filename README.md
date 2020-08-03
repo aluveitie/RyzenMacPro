@@ -24,8 +24,8 @@ Due to limited space it is not possible to connect the USB cable directly to the
 Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
-**BIOS:** 2.30  
-**OpenCore:** 0.6.0 (snapshot from 24.07.)  
+**BIOS:** 2.00 / 2.30  
+**OpenCore:** 0.6.0
 **macOS:** 10.15 / 11.0 Beta  
 
 ## Content
@@ -93,7 +93,9 @@ Everything is tested with ASRocks latest BIOS v2.00 and v2.30:
   - Security Level: No Security
 - Fast boot: disabled
 
-Note: ASRock did a wide cleanup of BIOS options in v2.30, several options were removed like advanced PCIe settings and possibility to disable USB controllers... 
+Note: 
+ASRock did a wide cleanup of BIOS options in v2.30, several options were removed like advanced PCIe settings and possibility to disable USB controllers... 
+BIOS version 2.30 seems to break sleep, screen turns off but system keeps running where as with 2.00 it properly enters sleep.
 
 ## USB port mapping
 ![Back I/O](./back_io.png)
@@ -150,8 +152,6 @@ If it does not entering sleep properly there are some things to be tried:
 - Turn off monitor before entering sleep
 
 Note that the AIO prevents sleep from working if the pump is connected by USB, even if the port is not configured. I'm currently working around this by connecting the pump one of the external USB ports to manually disconnect it before going to sleep until I can find an internal USB hub which supports PPPS (per port power switch) to disable the connection through software.
-
-BIOS version 2.30 seems to break sleep, screen turns off but system keeps running where as with 2.00 it properly enters sleep.
 
 
 ## Notes
