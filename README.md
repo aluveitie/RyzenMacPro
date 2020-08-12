@@ -139,6 +139,27 @@ Microphone is not yet working through integrated audio codec.
 Sleep can be a difficult topic with little things breaking either entering or leaving sleep. Certain USB devices can break transition into sleep (resulting in a kernel panic after 3 minutes).
 And make sure boot flag `-hbfx-disable-patch-pci` is set to avoid black screens on wakeup.
 
+The following settings seem to work for consistent sleep:
+
+```
+$ pmset -g
+System-wide power settings:
+Currently in use:
+ hibernatemode        0
+ autorestart          0
+ powernap             0
+ disksleep            10
+ sleep                10
+ Sleep On Power Button 1
+ ttyskeepawake        0
+ hibernatefile        /var/vm/sleepimage
+ tcpkeepalive         0
+ gpuswitch            2
+ displaysleep         10
+```
+
+
+
 If it does not entering sleep properly there are some things to be tried:
 
 - Disable "Allow Bluetooth devices to wake this computer" in Advanced Bluetooth settings (may require the use of the power button if keyboard and mouse are connected through standard bluetooth)
