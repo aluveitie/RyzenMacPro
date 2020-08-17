@@ -30,20 +30,6 @@ Liquidctl allows to controll the AIO under MacOS.
 
 ## Content
 
-### Config
-
-For BIOS 2.30
- - RebuildAppleMemoryMap: Yes
- - SetupVirtualMap: No
- - SyncRuntimePermissions: Yes 
-
-For BIOS 2.00:
-- RebuildAppleMemoryMap: No
-- SetupVirtualMap: Yes
-- SyncRuntimePermissions: No 
-
-`BigSurInstall-config.plist` has a minimal set of kexts and settings which should get the MacOS 11 installer running.
-
 ### ACPI
 
 The following SSDT files are for setting up HPET and EC.
