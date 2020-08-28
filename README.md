@@ -24,7 +24,7 @@ Due to limited space it is not possible to connect the USB cable directly to the
 Liquidctl allows to controll the AIO under MacOS.
 
 ## Versions
-**BIOS:** 2.00 / 2.30  
+**BIOS:** 2.00 / 2.30  / 2.60
 **OpenCore:** 0.6.0  
 **macOS:** 10.15 / 11.0 Beta  
 
@@ -44,7 +44,7 @@ The following SSDT files are for USB Power and properly name USB controllers and
 - SSDT-USBX.aml
 - SSDT-XHC.aml
 
-The following SSDT files fixing SMBUS support. Choose on depending on the BIOS version either 2.00 or 2.30+.
+The following SSDT files fixing SMBUS support. Choose on depending on the BIOS version either 2.00 or 2.30+. Note: Using this SSDT prevents the Machine from entering sleep.
 
 - SSDT-SBUS-MCHC_2.00.aml
 - SSDT-SBUS-MCHC_2.30.aml
@@ -84,7 +84,6 @@ Everything is tested with ASRocks latest BIOS v2.00 and v2.30/v2.60:
 
 Note: 
 ASRock did a wide cleanup of BIOS options in v2.30, several options were removed like advanced PCIe settings and possibility to disable USB controllers... 
-BIOS version 2.30/2.60 seem to break sleep, screen turns off but system keeps running where as with 2.00 it properly enters sleep.
 
 ## USB port mapping
 ![Back I/O](./back_io.png)

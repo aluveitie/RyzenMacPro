@@ -42,7 +42,7 @@
 				<key>Comment</key>
 				<string>SBUS controller fix</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
