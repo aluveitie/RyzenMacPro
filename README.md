@@ -120,7 +120,7 @@ In case the XHC0 controller is disabled, the ports 3/4 on the back I/O are USB 2
 
 Thunderbolt controller is not detected by MacOS unless device is already connected during boot. SSDT-TB3.aml file improves TB support (Thanks to [XinJiangCN](https://github.com/XinJiangCN) for that).
 
-The integrated Intel Wifi is not yet supported.
+The integrated Intel Wifi is supported by [itlwmx](https://github.com/OpenIntelWireless/itlwm) though missing support for AirDrop etc.
 
 Microphone is not yet working through integrated audio codec.
 
