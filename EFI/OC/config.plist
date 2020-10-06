@@ -78,6 +78,14 @@
 				<key>Path</key>
 				<string>SSDT-TB3.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>RTC fix</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RTC.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
