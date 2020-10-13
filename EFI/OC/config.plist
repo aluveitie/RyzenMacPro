@@ -12,7 +12,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -74,7 +74,7 @@
 				<key>Comment</key>
 				<string>TB3 Hotplug</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-TB3.aml</string>
 			</dict>
@@ -2212,7 +2212,7 @@
 		<false/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
+			<string>HfsPlusLegacy.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>#OpenCanopy.efi</string>
 		</array>
