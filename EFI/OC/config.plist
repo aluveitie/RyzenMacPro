@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>EC/USB Power</string>
+				<string>USB Power</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -66,7 +66,7 @@
 				<key>Comment</key>
 				<string>Sleep Management</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
@@ -149,7 +149,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>R1BSVwI=</data>
 				<key>Limit</key>
@@ -237,9 +237,9 @@
 				<key>device_type</key>
 				<string>Display Controller</string>
 				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<string>onboard-2</string>
 				<key>name</key>
-				<string>Radeon RX 5500 XT</string>
+				<string>AMD Radeon VII</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
 			<dict>
@@ -248,7 +248,7 @@
 				<key>device_type</key>
 				<string>Multimedia Controller</string>
 				<key>model</key>
-				<string>Radeon RX 5500 XT HDMI Audio</string>
+				<string>AMD Radeon VII HDMI Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)</key>
 			<dict>
@@ -744,7 +744,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/MacProMemoryNotificationDisabler</string>
 				<key>MaxKernel</key>
@@ -1955,6 +1955,8 @@
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
@@ -2057,7 +2059,7 @@
 			<key>Vault</key>
 			<string>Optional</string>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>j160</string>
 		</dict>
 		<key>Tools</key>
 		<array/>
@@ -2080,6 +2082,8 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>EnableTRIM</key>
+				<data>AQ==</data>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
@@ -2144,6 +2148,16 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>CustomMemory</key>
+		<false/>
+		<key>UpdateDataHub</key>
+		<true/>
+		<key>UpdateNVRAM</key>
+		<true/>
+		<key>UpdateSMBIOS</key>
+		<true/>
+		<key>UpdateSMBIOSMode</key>
+		<string>Create</string>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
@@ -2165,14 +2179,6 @@
 			<key>SystemUUID</key>
 			<string>???</string>
 		</dict>
-		<key>UpdateDataHub</key>
-		<true/>
-		<key>UpdateNVRAM</key>
-		<true/>
-		<key>UpdateSMBIOS</key>
-		<true/>
-		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -2255,6 +2261,8 @@
 			<false/>
 			<key>Resolution</key>
 			<string>Max</string>
+			<key>ForceResolution</key>
+			<false/>
 			<key>SanitiseClearScreen</key>
 			<false/>
 			<key>UgaPassThrough</key>
