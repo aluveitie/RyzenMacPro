@@ -22,8 +22,8 @@ I've heavily modded the case to fit the Radeon VII with 3 120mm radiators in it.
 Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is natively supported by macOS. 
 
 ## Versions
-**BIOS:** 2.00 / 2.30  / 2.60 / 2.70 / 2.71
-**OpenCore:** 0.6.3  
+**BIOS:** 2.00 / 2.30  / 2.60 / 2.70 / 2.80  
+**OpenCore:** 0.6.4  
 **macOS:** 11.0.1 
 
 ## Content
