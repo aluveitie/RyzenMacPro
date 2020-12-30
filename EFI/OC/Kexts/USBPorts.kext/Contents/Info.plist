@@ -36,14 +36,6 @@
 			<dict>
 				<key>kUSBMuxEnabled</key>
 				<true/>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>4700</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>4700</integer>
 				<key>port-count</key>
 				<data>CAAAAA==</data>
 				<key>ports</key>
@@ -51,7 +43,7 @@
 					<key>PRT1</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear: Blue 4 (USB2 Mode)</string>
+						<string>Rear: Blue #4 (USB2 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -62,7 +54,7 @@
 					<key>PRT2</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear: Blue 3 (USB2 Mode)</string>
+						<string>Rear: Blue #3 (USB2 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -73,9 +65,9 @@
 					<key>PRT3</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear: Blue 2 (USB2 Mode)</string>
+						<string>Rear: Blue #2 (USB2 Mode)</string>
 						<key>UsbConnector</key>
-						<integer>10</integer>
+						<integer>3</integer>
 						<key>name</key>
 						<string>PRT3</string>
 						<key>port</key>
@@ -84,7 +76,7 @@
 					<key>PRT4</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear: Blue 1 (USB2 Mode)</string>
+						<string>Rear: Blue #1 (USB2 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -95,7 +87,7 @@
 					<key>PRT5</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear: Blue 4 (USB3 Mode)</string>
+						<string>Rear: Blue #4 (USB3 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -106,7 +98,7 @@
 					<key>PRT6</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear: Blue 3 (USB3 Mode)</string>
+						<string>Rear: Blue #3 (USB3 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -117,7 +109,7 @@
 					<key>PRT7</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front: Port 2 (USB3 Mode)</string>
+						<string>Rear: Blue #2 (USB3 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -128,7 +120,7 @@
 					<key>PRT8</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front: Port 2 (USB3 Mode)</string>
+						<string>Rear: Blue #1 (USB3 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -141,36 +133,28 @@
 			<key>model</key>
 			<string>MacPro7,1</string>
 		</dict>
-		<key>MacPro7,1-XHC0-61</key>
+		<key>MacPro7,1-XHC1-20</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
 			<string>AppleUSBHostMergeProperties</string>
 			<key>IOPathMatch</key>
-			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/BXBR@1,2/IOPP/BYUP@0/IOPP/BYD8@8/IOPP/XHC0@0,3/XHC0@61000000</string>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/BXBR@1,2/IOPP/BYUP@0/IOPP/BYD8@8/IOPP/XHC1@0,1/XHC1@20000000</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>kUSBMuxEnabled</key>
 				<true/>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>4700</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>4700</integer>
 				<key>port-count</key>
-				<data>CgAAAA==</data>
+				<data>CAAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>PRT1</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front: Port 2 (USB2 Mode)</string>
+						<string>Rear: Red #2 (USB2 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -181,7 +165,118 @@
 					<key>PRT2</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front: Port 1 (USB2 Mode)</string>
+						<string>Rear: Red #1 (USB2 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>PRT2</string>
+						<key>port</key>
+						<data>AgAAAA==</data>
+					</dict>
+					<key>PRT3</key>
+					<dict>
+						<key>Comment</key>
+						<string>Rear: Red #3 (USB2 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>PRT3</string>
+						<key>port</key>
+						<data>AwAAAA==</data>
+					</dict>
+					<key>PRT5</key>
+					<dict>
+						<key>Comment</key>
+						<string>Front: 2.0 Header #2 (USB2 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>PRT5</string>
+						<key>port</key>
+						<data>BQAAAA==</data>
+					</dict>
+					<key>PRT6</key>
+					<dict>
+						<key>Comment</key>
+						<string>Front: 2.0 Header #1 (USB2 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>PRT6</string>
+						<key>port</key>
+						<data>BgAAAA==</data>
+					</dict>
+					<key>PRT7</key>
+					<dict>
+						<key>Comment</key>
+						<string>Rear: Red #2 (USB3 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>PRT7</string>
+						<key>port</key>
+						<data>BwAAAA==</data>
+					</dict>
+					<key>PRT8</key>
+					<dict>
+						<key>Comment</key>
+						<string>Rear: Red #1 (USB3 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>PRT8</string>
+						<key>port</key>
+						<data>CAAAAA==</data>
+					</dict>
+					<key>PRT9</key>
+					<dict>
+						<key>Comment</key>
+						<string>Rear: Blue #3 (USB3 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>PRT9</string>
+						<key>port</key>
+						<data>CQAAAA==</data>
+					</dict>
+				</dict>
+			</dict>
+			<key>model</key>
+			<string>MacPro7,1</string>
+		</dict>
+		<key>MacPro7,1-XHC2-61</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<key>IOClass</key>
+			<string>AppleUSBHostMergeProperties</string>
+			<key>IOPathMatch</key>
+			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/BXBR@1,2/IOPP/BYUP@0/IOPP/BYD8@8/IOPP/XHC2@0,3/XHC2@61000000</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>kUSBMuxEnabled</key>
+				<true/>
+				<key>port-count</key>
+				<data>CgAAAA==</data>
+				<key>ports</key>
+				<dict>
+					<key>PRT1</key>
+					<dict>
+						<key>Comment</key>
+						<string>Front: 3.1 Header #2 (USB2 Mode)</string>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>name</key>
+						<string>PRT1</string>
+						<key>port</key>
+						<data>AQAAAA==</data>
+					</dict>
+					<key>PRT2</key>
+					<dict>
+						<key>Comment</key>
+						<string>Front: 3.1 Header #1 (USB2 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -205,7 +300,7 @@
 						<key>Comment</key>
 						<string>Rear: Type-C (USB2 Mode reversed)</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>10</integer>
 						<key>name</key>
 						<string>PRT4</string>
 						<key>port</key>
@@ -216,7 +311,7 @@
 						<key>Comment</key>
 						<string>Internal: Aura RGB Controller</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>PRT5</string>
 						<key>port</key>
@@ -227,7 +322,7 @@
 						<key>Comment</key>
 						<string>Internal: Bluetooth Module</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>name</key>
 						<string>PRT6</string>
 						<key>port</key>
@@ -236,7 +331,7 @@
 					<key>PRT7</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front: Port 2 (USB3 Mode)</string>
+						<string>Front: 3.1 Header #2 (USB3 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -247,7 +342,7 @@
 					<key>PRT8</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front: Port 1 (USB3 Mode)</string>
+						<string>Front: 3.1 Header #1 (USB3 Mode)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -271,140 +366,7 @@
 						<key>Comment</key>
 						<string>Rear: Type-C (USB3 Mode reversed)</string>
 						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PT10</string>
-						<key>port</key>
-						<data>CgAAAA==</data>
-					</dict>
-				</dict>
-			</dict>
-			<key>model</key>
-			<string>MacPro7,1</string>
-		</dict>
-		<key>MacPro7,1-XHC1-20</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
-			<key>IOClass</key>
-			<string>AppleUSBHostMergeProperties</string>
-			<key>IOPathMatch</key>
-			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/BXBR@1,2/IOPP/BYUP@0/IOPP/BYD8@8/IOPP/XHCI@0,1/XHCI@20000000</string>
-			<key>IOProviderClass</key>
-			<string>AppleUSBXHCIPCI</string>
-			<key>IOProviderMergeProperties</key>
-			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>4700</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>4700</integer>
-				<key>port-count</key>
-				<data>CgAAAA==</data>
-				<key>ports</key>
-				<dict>
-					<key>PRT1</key>
-					<dict>
-						<key>Comment</key>
-						<string>Rear: Blue 2 (USB2 Mode)</string>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT1</string>
-						<key>port</key>
-						<data>AQAAAA==</data>
-					</dict>
-					<key>PRT2</key>
-					<dict>
-						<key>Comment</key>
-						<string>Rear: Blue 1 (USB2 Mode)</string>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT2</string>
-						<key>port</key>
-						<data>AgAAAA==</data>
-					</dict>
-					<key>PRT3</key>
-					<dict>
-						<key>Comment</key>
-						<string>Rear: Red 3 (USB2 Mode)</string>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT3</string>
-						<key>port</key>
-						<data>AwAAAA==</data>
-					</dict>
-					<key>PRT4</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT4</string>
-						<key>port</key>
-						<data>BAAAAA==</data>
-					</dict>
-					<key>PRT5</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT5</string>
-						<key>port</key>
-						<data>BQAAAA==</data>
-					</dict>
-					<key>PRT6</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT6</string>
-						<key>port</key>
-						<data>BgAAAA==</data>
-					</dict>
-					<key>PRT7</key>
-					<dict>
-						<key>Comment</key>
-						<string>Rear: Red 2 (USB3 Mode)</string>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT7</string>
-						<key>port</key>
-						<data>BwAAAA==</data>
-					</dict>
-					<key>PRT8</key>
-					<dict>
-						<key>Comment</key>
-						<string>Rear: Red 1 (USB3 Mode)</string>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT8</string>
-						<key>port</key>
-						<data>CAAAAA==</data>
-					</dict>
-					<key>PRT9</key>
-					<dict>
-						<key>Comment</key>
-						<string>Rear: Blue 3 (USB3 Mode)</string>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>name</key>
-						<string>PRT9</string>
-						<key>port</key>
-						<data>CQAAAA==</data>
-					</dict>
-					<key>PT10</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>10</integer>
 						<key>name</key>
 						<string>PT10</string>
 						<key>port</key>
