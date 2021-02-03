@@ -20,9 +20,9 @@ I've heavily modded the case to fit the Radeon VII with 3 120mm radiators in it.
 Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is natively supported by macOS. 
 
 ## Versions
-**BIOS:** 3001  
-**OpenCore:** 0.6.4  
-**macOS:** 11.2 Beta
+**BIOS:** 3402 Beta  
+**OpenCore:** 0.6.6  
+**macOS:** 11.2 
 
 ## Content
 
@@ -56,7 +56,7 @@ The USBPorts kext is depending on the SMBIOS and the current controller layout i
 
 ### BIOS settings
 
-Everything is tested with Asus' latest BIOS 3001:
+Everything is tested with Asus' latest BIOS 3402 Beta:
 
 - CSM: disabled
 - Above 4G decoding: enabled
