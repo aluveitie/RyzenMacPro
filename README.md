@@ -22,7 +22,7 @@ Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is n
 ## Versions
 **BIOS:** 3402 Beta  
 **OpenCore:** 0.6.6  
-**macOS:** 11.2 
+**macOS:** 11.3 Beta 
 
 ## Content
 
