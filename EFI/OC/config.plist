@@ -1368,42 +1368,35 @@
 				<integer>0</integer>
 			</dict>
 			<dict>
- 				<key>Arch</key>
- 				<string>x86_64</string>
- 				<key>Base</key>
- 				<string></string>
- 				<key>Comment</key>
- 				<string>DhinakG - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN - 11.3b1</string>
- 				<key>Count</key>
- 				<integer>1</integer>
- 				<key>Enabled</key>
- 				<true/>
- 				<key>Find</key>
- 				<data>
- 				MdIAAIA9AAAAAAZ1AA==
- 				</data>
- 				<key>Identifier</key>
- 				<string>kernel</string>
- 				<key>Limit</key>
- 				<integer>0</integer>
- 				<key>Mask</key>
- 				<data>
- 				//8AAP//AAAA////AA==
- 				</data>
- 				<key>MaxKernel</key>
- 				<string>20.99.99</string>
- 				<key>MinKernel</key>
- 				<string>20.4.0</string>
- 				<key>Replace</key>
- 				<data>
- 				swG6vE/qeOldAAAAkA==
- 				</data>
- 				<key>ReplaceMask</key>
- 				<data>
- 				</data>
- 				<key>Skip</key>
- 				<integer>0</integer>
- 			</dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>DhinakG - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN - 11.3b1</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>MdIAAIA9AAAAAAZ1AA==</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>//8AAP//AAAA////AA==</data>
+				<key>MaxKernel</key>
+				<string>20.99.99</string>
+				<key>MinKernel</key>
+				<string>20.4.0</string>
+				<key>Replace</key>
+				<data>swG6vE/qeOldAAAAkA==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
 			<dict>
 				<key>Arch</key>
 				<string>x86_64</string>
@@ -2528,6 +2521,8 @@
 			<integer>20</integer>
 			<key>PlayChime</key>
 			<string>Disabled</string>
+			<key>ResetTrafficClass</key>
+			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
@@ -2547,8 +2542,6 @@
 			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 			<key>KeySupport</key>
 			<true/>
 			<key>KeySupportMode</key>
@@ -2569,6 +2562,8 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
+			<false/>
+			<key>GopPassThrough</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
@@ -2630,6 +2625,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>ActivateHpetSupport</key>
+			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>
