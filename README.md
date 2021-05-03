@@ -1,6 +1,6 @@
 # Ryzen Mac Pro - OpenCore EFI for Asus Strix X570-I
 
-This repository provides the basic EFI folder to run macOS Catalina on an Asus ROG Strix X570-I Gaming motherboard. The default provided currently using a Ryzen 9 3950X 16 Core CPU and a Radeon VII with MacPro7,1 SMBIOS. For a short guide to using different CPU, GPU and SMBIOS see below.
+This repository provides the basic EFI folder to run macOS Catalina on an Asus ROG Strix X570-I Gaming motherboard. The default provided currently using a Ryzen 9 3950X 16 Core CPU and a RX 6900 XT with MacPro7,1 SMBIOS. For a short guide to using different CPU, GPU and SMBIOS see below.
 This is intended as a reference and to share improvements for similar build, not as an out of the box EFI to download. It is highly recommended to start with a vanilla OpenCore and following OpenCore Vanilla Guide first.
 
 ## Ryzen Mac Pro build
@@ -11,18 +11,18 @@ This is intended as a reference and to share improvements for similar build, not
 **WIFI/BT**: Broadcom BCM94360NG  
 **Memory:** Kingston HyperX Predator (2x 32GB) DDR4-3600  
 **Storage:** Corsair MP600 (1000GB) M.2 NVMe PCIe 4.0  
-**Video Card:** XFX Radeon VII 16GB  
+**Video Card:** AMD Radeon RX 6900 XT 16GB  
 **Power Supply:** Corsair SF600 Platinum  
 **Case:** Phanteks Enthoo Evolv Shift (Mini-ITX)  
 
 ### Notes
-I've heavily modded the case to fit the Radeon VII with 3 120mm radiators in it.
+I've heavily modded the case to fit the RX 6900 XT with 3 120mm radiators in it.
 Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is natively supported by macOS. 
 
 ## Versions
-**BIOS:** 3406  
-**OpenCore:** 0.6.8  
-**macOS:** 11.3 Beta  
+**BIOS:** 3801 Beta  
+**OpenCore:** 0.6.9  
+**macOS:** 11.4 Beta  
 
 ## Content
 
@@ -47,7 +47,7 @@ The AMD Power Gadget can be downloaded from https://github.com/trulyspinach/SMCA
 
 The VoodooTSCSyncAMD kext is used to sync the cores and required the correct number of threads (cores * 2). Either update the Info.plist of the kext or create a new one with the VoodooTSCSync configurator.
 
-The AGPMInjector kext is used to inject proper power management and can be created with Pavo-IM's generator and is specific to MacPro7,1 SMBIOS and the Radeon VII. It is recommended to create a custom kext.
+The AGPMInjector kext is used to inject proper power management and can be created with Pavo-IM's generator and is specific to MacPro7,1 SMBIOS and the Radeon RX 6900 XT. It is necessary to create a custom kext for different GPUs.
 
 The USBPorts kext is depending on the SMBIOS and the current controller layout in the DSDT.
 

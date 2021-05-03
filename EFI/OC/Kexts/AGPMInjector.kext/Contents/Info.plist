@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19A603003</string>
+	<string>20A241113</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.3.0</string>
+	<string>3.3.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>119</string>
+	<string>122.1</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>AGPM</key>
@@ -38,7 +38,7 @@
 			<dict>
 				<key>MacPro7,1</key>
 				<dict>
-					<key>Vendor1002Device66af</key>
+					<key>Vendor1002Device73bf</key>
 					<dict>
 						<key>AGDCEnabled</key>
 						<integer>1</integer>
