@@ -32,7 +32,7 @@ Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is n
 * `SSDT-PLUG.aml` sets plugin type
 * `SSDT-SBRG.aml` fixing EC, RTC and IRQ conflicts
 * `SSDT-USBX.aml` fixing USB Power
-* `SSDT-SBUS-MCHC.aml` fixing SMBUS support (disabled by default as it breaks sleep)
+* `SSDT-SBUS-MCHC.aml` fixing SMBUS support
 
 The second patch is renaming the second XHC0 to XHC2. This is completely optional as the USBPorts.kext does match on the path instead of the name, but it makes easier to differentiate ports.
 Note: XHC0 is not renamed to XHCI since the MacPro7,1 SMBIOS does not require this, if iMacPro1,1 is to be used this would have to be fixed with an SSDT-XHC as usual.
