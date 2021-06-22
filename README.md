@@ -19,12 +19,14 @@ This is intended as a reference and to share improvements for similar build, not
 I've heavily modded the case to fit the RX 6900 XT with 3 120mm radiators in it.
 Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is natively supported by macOS. 
 
+To run MacOS with KVM/QEMU in Unraid use the MacOS.xml as a template for the VM and EFI-HackInABox as a template for OC. 
+
 ## Versions
-**BIOS:** 3801 Beta  
+**BIOS:** 4002  
 **OpenCore:** 0.7.0  
 **macOS:** 11.5 Beta  
 
-## Content
+## Content - Bare Metal
 
 ### ACPI
 
@@ -89,3 +91,4 @@ Cedits and links:
 * [khronokernel's SmallTree](https://github.com/khronokernel/SmallTree-I211-AT-patch)
 * [Hackintool](https://www.hackintosh-forum.de/forum/thread/38316-hackintool-ehemals-intel-fb-patcher/)
 * [VoodooTSCSync Configurator](https://www.insanelymac.com/forum/files/file/744-voodootscsync-configurator/)
+* [Hackinabox](https://github.com/Pavo-IM/Hackinabox)
