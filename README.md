@@ -23,7 +23,7 @@ To run MacOS with KVM/QEMU in Unraid use the MacOS.xml as a template for the VM 
 
 ## Versions
 **BIOS:** 4002  
-**OpenCore:** 0.7.0  
+**OpenCore:** 0.7.1  
 **macOS:** 11.5 Beta  
 
 ## Content - Bare Metal
