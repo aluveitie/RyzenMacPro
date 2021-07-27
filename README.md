@@ -21,10 +21,15 @@ Also I've replaced the integrated Intel AX200 module with a BCM94360NG that is n
 
 To run MacOS with KVM/QEMU in Unraid use the MacOS.xml as a template for the VM and EFI-HackInABox as a template for OC. 
 
+With MacOS 12 Monterey, the SmallTree kext currently does not work. Either Wifi or a USB-to-Ethernet dongle has to be used for the time being.
+The TSC Sync kext also has to be deactivated as it causes kernel panics on Monterey.
+
+The current set of patches is configured for 16 cores - see [AMD-OSX](https://github.com/AMD-OSX/AMD_Vanilla) on how to set up the patches for other core counts.
+
 ## Versions
 **BIOS:** 4002  
-**OpenCore:** 0.7.1  
-**macOS:** 11.5 Beta  
+**OpenCore:** 0.7.2 (snapshot)  
+**macOS:** 12.0 Beta  
 
 ## Content - Bare Metal
 
