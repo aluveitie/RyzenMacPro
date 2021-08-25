@@ -18,7 +18,7 @@
 				<key>Comment</key>
 				<string>HPET fix</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-HPET.aml</string>
 			</dict>
@@ -77,7 +77,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>KF9DUlM=</data>
 				<key>Limit</key>

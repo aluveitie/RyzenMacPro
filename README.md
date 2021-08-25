@@ -27,7 +27,7 @@ The TSC Sync kext also has to be deactivated as it causes kernel panics on Monte
 The current set of patches is configured for 16 cores - see [AMD-OSX](https://github.com/AMD-OSX/AMD_Vanilla) on how to set up the patches for other core counts.
 
 ## Versions
-**BIOS:** 4002  
+**BIOS:** 4010 Beta  
 **OpenCore:** 0.7.2  
 **macOS:** 12.0 Beta  
 
@@ -35,7 +35,7 @@ The current set of patches is configured for 16 cores - see [AMD-OSX](https://gi
 
 ### ACPI
 
-* `SSDT-HPET.aml` together with the first rename patch fixing IRQ conflicts
+* `SSDT-HPET.aml` together with the first rename patch fixing IRQ conflicts (no longer necessary with BIOS 4010)
 * `SSDT-PLUG.aml` sets plugin type
 * `SSDT-SBRG.aml` fixing EC, RTC and IRQ conflicts
 * `SSDT-USBX.aml` fixing USB Power
@@ -66,7 +66,7 @@ The USBPorts kext is depending on the SMBIOS and the current controller layout i
 
 ### BIOS settings
 
-Everything is tested with Asus' latest BIOS 3402 Beta:
+Everything is tested with Asus' latest BIOS 4010 Beta:
 
 - CSM: disabled
 - Above 4G decoding: enabled
