@@ -54,6 +54,14 @@
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ARPT fix</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ARPT.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>

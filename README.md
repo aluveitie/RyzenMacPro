@@ -40,6 +40,7 @@ The current set of patches is configured for 16 cores - see [AMD-OSX](https://gi
 * `SSDT-SBRG.aml` fixing EC, RTC and IRQ conflicts
 * `SSDT-USBX.aml` fixing USB Power
 * `SSDT-SBUS-MCHC.aml` fixing SMBUS support
+* `SSDT-ARPT.aml` renaming AirPort card
 
 The second patch is renaming the second XHC0 to XHC2. This is completely optional as the USBPorts.kext does match on the path instead of the name, but it makes easier to differentiate ports.
 Note: XHC0 is not renamed to XHCI since the MacPro7,1 SMBIOS does not require this, if iMacPro1,1 is to be used this would have to be fixed with an SSDT-XHC as usual.
