@@ -28,7 +28,7 @@ The current set of patches is configured for 16 cores - see [AMD-OSX](https://gi
 
 ## Versions
 **BIOS:** 4002  
-**OpenCore:** 0.7.2 (snapshot)  
+**OpenCore:** 0.7.2  
 **macOS:** 12.0 Beta  
 
 ## Content - Bare Metal
@@ -46,6 +46,8 @@ The second patch is renaming the second XHC0 to XHC2. This is completely optiona
 Note: XHC0 is not renamed to XHCI since the MacPro7,1 SMBIOS does not require this, if iMacPro1,1 is to be used this would have to be fixed with an SSDT-XHC as usual.
 
 ### Kexts
+
+SmallTree kext is no longer working with macOS 12 Monterey, but the AppleIGB kext can be used as a replacement.
 
 Besides the default kexts the following are noteworthy:
 
