@@ -27,8 +27,8 @@ The TSC Sync kext also has to be deactivated as it causes kernel panics on Monte
 The current set of patches is configured for 16 cores - see [AMD-OSX](https://github.com/AMD-OSX/AMD_Vanilla) on how to set up the patches for other core counts.
 
 ## Versions
-**OpenCore:** 0.7.2  
 **BIOS:** 4021  
+**OpenCore:** 0.7.3  
 **macOS:** 12.0 Beta  
 
 ## Content - Bare Metal
