@@ -27,15 +27,14 @@ The TSC Sync kext also has to be deactivated as it causes kernel panics on Monte
 The current set of patches is configured for 16 cores - see [AMD-OSX](https://github.com/AMD-OSX/AMD_Vanilla) on how to set up the patches for other core counts.
 
 ## Versions
-**BIOS:** 4010 Beta  
 **OpenCore:** 0.7.2  
+**BIOS:** 4021  
 **macOS:** 12.0 Beta  
 
 ## Content - Bare Metal
 
 ### ACPI
 
-* `SSDT-HPET.aml` together with the first rename patch fixing IRQ conflicts (no longer necessary with BIOS 4010)
 * `SSDT-PLUG.aml` sets plugin type
 * `SSDT-SBRG.aml` fixing EC, RTC and IRQ conflicts
 * `SSDT-USBX.aml` fixing USB Power
@@ -54,8 +53,6 @@ Besides the default kexts the following are noteworthy:
 For enabling the integrated Intel Bluetooth/Wifi you can use the kexts from OpenIntelWireless. Though Bluetooth is working mostly perfect, some things like audio input (Bluetooth Mic from AirPods for example) do not work.
 
 The AMD Power Gadget can be downloaded from https://github.com/trulyspinach/SMCAMDProcessor/releases. Other monitoring tools can also access and display this information.
-
-The VoodooTSCSyncAMD kext is used to sync the cores and required the correct number of threads (cores * 2). Either update the Info.plist of the kext or create a new one with the VoodooTSCSync configurator.
 
 The AGPMInjector kext is used to inject proper power management and can be created with Pavo-IM's generator and is specific to MacPro7,1 SMBIOS and the Radeon RX 6900 XT. It is necessary to create a custom kext for different GPUs.
 
@@ -98,5 +95,4 @@ Cedits and links:
 * [trulyspinach's SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
 * [khronokernel's SmallTree](https://github.com/khronokernel/SmallTree-I211-AT-patch)
 * [Hackintool](https://www.hackintosh-forum.de/forum/thread/38316-hackintool-ehemals-intel-fb-patcher/)
-* [VoodooTSCSync Configurator](https://www.insanelymac.com/forum/files/file/744-voodootscsync-configurator/)
 * [Hackinabox](https://github.com/Pavo-IM/Hackinabox)
