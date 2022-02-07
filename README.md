@@ -28,8 +28,8 @@ The current set of patches is configured for 16 cores - see [AMD-OSX](https://gi
 
 ## Versions
 **BIOS:** 4021  
-**OpenCore:** 0.7.7  
-**macOS:** 12.1  
+**OpenCore:** 0.7.8  
+**macOS:** 12.2  
 
 ## Content - Bare Metal
 
