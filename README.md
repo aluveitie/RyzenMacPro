@@ -27,9 +27,9 @@ The TSC Sync kext also has to be deactivated as it causes kernel panics on Monte
 The current set of patches is configured for 16 cores - see [AMD-OSX](https://github.com/AMD-OSX/AMD_Vanilla) on how to set up the patches for other core counts.
 
 ## Versions
-**BIOS:** 4021  
+**BIOS:** 4204  
 **OpenCore:** 0.7.9  
-**macOS:** 12.2  
+**macOS:** 12.3  
 
 ## Content - Bare Metal
 
@@ -48,6 +48,8 @@ Note: XHC0 is not renamed to XHCI since the MacPro7,1 SMBIOS does not require th
 
 SmallTree kext is no longer working with macOS 12 Monterey, but the AppleIGB kext can be used as a replacement.
 
+With macOS 12.3 the AppleMCEReporterDisabler.kext is required to boot on AMD.
+
 Besides the default kexts the following are noteworthy:
 
 For enabling the integrated Intel Bluetooth/Wifi you can use the kexts from OpenIntelWireless. Though Bluetooth is working mostly perfect, some things like audio input (Bluetooth Mic from AirPods for example) do not work.
@@ -57,6 +59,12 @@ The AMD Power Gadget can be downloaded from https://github.com/trulyspinach/SMCA
 The AGPMInjector kext is used to inject proper power management and can be created with Pavo-IM's generator and is specific to MacPro7,1 SMBIOS and the Radeon RX 6900 XT. It is necessary to create a custom kext for different GPUs.
 
 The USBPorts kext is depending on the SMBIOS and the current controller layout in the DSDT.
+
+
+### Device Properties
+
+With macOS 12.3, Navi cards have sever performance issues (about half the Metal performance than 12.2). To fix this, the Framebuffer of the corresponding Apple card has to be used.
+In case of the Radeon RX 6900 XT this would be the ATY,Carswell of the Radeon Pro W6900X.
 
 
 ## Setup
