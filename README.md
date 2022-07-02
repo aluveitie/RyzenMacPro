@@ -28,8 +28,8 @@ The current set of patches is configured for 16 cores - see [AMD-OSX](https://gi
 
 ## Versions
 **BIOS:** 4204  
-**OpenCore:** 0.7.9  
-**macOS:** 12.3  
+**OpenCore:** 0.8.1  
+**macOS:** 12.4  
 
 ## Content - Bare Metal
 
@@ -48,7 +48,7 @@ Note: XHC0 is not renamed to XHCI since the MacPro7,1 SMBIOS does not require th
 
 SmallTree kext is no longer working with macOS 12 Monterey, but the AppleIGB kext can be used as a replacement.
 
-With macOS 12.3 the AppleMCEReporterDisabler.kext is required to boot on AMD.
+Starting with macOS 12.3 the AppleMCEReporterDisabler.kext is required again to boot on AMD.
 
 Besides the default kexts the following are noteworthy:
 
@@ -64,7 +64,7 @@ The USBPorts kext is depending on the SMBIOS and the current controller layout i
 ### Device Properties
 
 With macOS 12.3, Navi cards have sever performance issues (about half the Metal performance than 12.2). To fix this, the Framebuffer of the corresponding Apple card has to be used.
-In case of the Radeon RX 6900 XT this would be the ATY,Carswell of the Radeon Pro W6900X.
+In case of the Radeon RX 6900 XT this would be the ATY,Carswell of the Radeon Pro W6900X. This issue has been fixed with macOS 12.4.
 
 
 ## Setup

@@ -165,17 +165,6 @@
 				<key>built-in</key>
 				<data>AQAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>@0,name</key>
-				<string>ATY,Carswell</string>
-				<key>@1,name</key>
-				<string>ATY,Carswell</string>
-				<key>@2,name</key>
-				<string>ATY,Carswell</string>
-				<key>@3,name</key>
-				<string>ATY,Carswell</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)</key>
 			<dict>
 				<key>layout-id</key>
@@ -898,6 +887,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -909,6 +900,8 @@
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
@@ -990,8 +983,6 @@
 			<integer>2147483650</integer>
 			<key>LogModules</key>
 			<string>*</string>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -1001,12 +992,8 @@
 		<array/>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>AllowToggleSip</key>
-			<false/>
 			<key>ApECID</key>
 			<integer>38696345832810685</integer>
 			<key>AuthRestart</key>
@@ -1031,6 +1018,13 @@
 			<string>j160</string>
 			<key>Vault</key>
 			<string>Optional</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array/>
